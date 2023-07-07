@@ -1,0 +1,407 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    width: 100%;
+    height:auto;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Div Principal del la prueba */
+
+#divPrincipal{
+    background-color: #f2f4f7;
+}
+
+/* Header Con la imagen de Presentacion  */
+.imgtxtPrincipales{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/imgPrincipal.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.txtPrincipal h3{
+    font-size: 1.2rem;
+    font-weight:bold;
+    color: #d2d3dc;
+}
+
+.txtPrincipal h1{
+   font-weight: 900;
+   font-size: 2.2rem; 
+}
+
+.txtPrincipal p{
+    font-weight: 500; 
+    font-size: 1rem; 
+ }
+
+ /* Main con los Productos */
+
+.productosMain{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 13vh;
+    color: #1d2351;
+}
+
+.productosMain h2{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+.cardsDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.cardProductos{
+    width:18rem;
+}
+
+.imgCard{
+   padding: 2vw;
+}
+
+.linkProducto{
+    text-decoration: none;
+}
+
+/* Section más información  */
+
+.carouselImgSection{
+    background-color: #ffffff;
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    margin-top: 15vh;
+}
+
+.carouselImgSection h2{
+    margin-left: 15vw;
+    margin-top: 10vh;
+    font-weight: 600;
+    color: #1d2351;
+
+}
+
+.carouselImgDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height:38vh;   
+}
+
+.carouselDiv{
+    width:40vw;
+}
+
+.carousel-indicators {
+    
+    justify-content: start;
+    margin-left: 5vw;
+    
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    background-color:#1d2351;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.divImgTransformamos{
+    margin-bottom: 8vh;
+}
+
+.imgTransformamos{
+    width: 32vw;
+}
+
+.divButtonsInformacion{
+    margin-left: 15.5vw;
+    margin-bottom: 5vh;
+}
+
+.divButtonsInformacion .demoButton{
+    opacity:0.9;
+    background-color: #3366ff;
+}
+
+.divButtonsInformacion .masInformacionButton{
+    margin-left: 1vw;
+}
+
+.footerInfos{
+    background-color: #f2f4f7 ;
+    width:100vw;
+    height:10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.copyrightInconcertDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.copyrightInconcertDiv p{
+    margin-bottom: 0;
+}
+
+.politicaPrivacidadDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:40vw;
+}
+
+.politicaPrivacidadDiv .politicaPrivacidad{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+   
+
+    .imgtxtPrincipales{
+        width: 100vw;
+        height: 60vh;
+        background-image: url("./assets/imgPrincipalMobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        align-items:center;
+        overflow-x: hidden;
+    }
+
+    .txtPrincipal{
+        padding: 2vw;
+    }
+
+    .txtPrincipal h3{
+        font-size: 1.2rem;
+    }
+    .txtPrincipal h1{
+      
+       font-size: 1.4rem; 
+    }  
+    .txtPrincipal p{
+        
+        font-size: 1rem; 
+     }
+
+     .productosMain{
+        margin-top: 5vh;
+     }
+
+     .productosMain h2{
+        font-size: 1.4rem;
+     }
+
+     .cardsDiv{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 4vw;
+     }
+
+     .carouselImgSection{
+        margin-top: 5vh;
+        height: auto;
+        gap:5vh
+     }
+
+     .carouselImgSection h2{
+        margin-top: 5vh;
+     }
+
+     .carouselImgDiv{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .carouselDiv{
+        width:90vw;
+        height: auto;
+    }
+
+    .carousel-indicators {
+        justify-content: start;
+        margin-left: 5vw;
+        
+    }
+
+    .imgTransformamos{
+        width: 70vw;
+    }
+
+    .divButtonsInformacion{
+       width:100vw;
+       display:flex;
+       justify-content: center;
+       margin-left: 0;
+    }
+
+    .politicaPrivacidadDiv .politicaPrivacidad{
+        font-size: 0.7rem;
+    }
+
+
+
+}
+
+@media screen and (min-width: 505px) and (max-width: 767px) {
+    .carouselImgSection{
+       
+        gap:17vh
+     }
+
+
+    .divButtonsInformacion{
+       margin-top: -8vh;
+    }
+
+    .politicaPrivacidadDiv .politicaPrivacidad{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+
+    .imgtxtPrincipales{
+        width: 100vw;
+        height: 60vh;
+        background-image: url("./assets/imgPrincipalMobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        align-items:center;
+        overflow-x: hidden;
+    }
+
+    .txtPrincipal{
+        padding: 5vw;
+    }
+
+    .txtPrincipal h3{
+        font-size: 1.5rem;
+    }
+    .txtPrincipal h1{
+      
+       font-size: 2rem; 
+    }  
+    .txtPrincipal p{
+        
+        font-size: 1.5rem; 
+     }
+
+     .productosMain{
+        margin-top: 5vh;
+     }
+
+     .productosMain h2{
+        font-size: 1.8rem;
+     }
+
+     .productosMain .textoProcuctosP{
+        padding-left:5vw;
+        padding-right:5vw ;
+        font-size: 25px;
+     }
+
+     .cardsDiv{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+     }
+
+     .cardProductos {
+        width: 80vw;
+     }
+     .cardProductos h5{
+        font-size: 30px;
+     }
+     .cardProductos p{
+        font-size: 25px;
+     }
+
+     .cardProductos a{
+        font-size:25px ;
+     }
+     .carouselImgSection{
+        margin-top: 5vh;
+        height: auto;
+        gap:18vh;
+     }
+
+     .carouselImgSection h2{
+        margin-top: 5vh;
+     }
+
+     .carouselImgDiv{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .carouselDiv{
+        width:90vw;
+        height: auto;
+    }
+
+    .carousel-indicators {
+        justify-content: start;
+        margin-left: 5vw;
+        
+    }
+
+    .imgTransformamos{
+        width: 70vw;
+    }
+
+    .divButtonsInformacion{
+       width:100vw;
+       display:flex;
+       justify-content: center;
+       margin-left: 0;
+    }
+
+    .politicaPrivacidadDiv .politicaPrivacidad{
+        font-size: 0.7rem;
+    }
+
+
+} 
+
+
