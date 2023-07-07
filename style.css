@@ -35,19 +35,17 @@ body{
 }
 
 .txtPrincipal h3{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight:bold;
     color: #d2d3dc;
 }
 
 .txtPrincipal h1{
-   font-weight: 900;
-   font-size: 2.2rem; 
+   font-size: 2.4rem; 
 }
 
 .txtPrincipal p{
-    font-weight: 500; 
-    font-size: 1rem; 
+    font-size: 0.9rem; 
  }
 
  /* Main con los Productos */
@@ -61,10 +59,17 @@ body{
 }
 
 .productosMain h2{
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: 1.6rem;  
 }
 
+.productosMain p{
+    color: #353535;
+    /* font-size: 18px; */
+}
+
+.productosMain .textoProcuctos{
+    font-size: 0.9rem;
+}
 
 .cardsDiv{
     display: flex;
@@ -74,7 +79,8 @@ body{
 }
 
 .cardProductos{
-    width:18rem;
+    width: 348px;
+    height: 406px;
 }
 
 .imgCard{
@@ -99,7 +105,6 @@ body{
 .carouselImgSection h2{
     margin-left: 15vw;
     margin-top: 10vh;
-    font-weight: 600;
     color: #1d2351;
 
 }
@@ -234,14 +239,17 @@ body{
         gap: 4vw;
      }
 
+    
+
      .carouselImgSection{
         margin-top: 5vh;
         height: auto;
-        gap:9vh;
+        gap:12vh;
      }
 
      .carouselImgSection h2{
         margin-top: 5vh;
+        margin-left: 12vw;
      }
 
      .carouselImgDiv{
@@ -280,10 +288,10 @@ body{
 
 }
 
-@media screen and (min-width: 505px) and (max-width: 767px) {
+@media screen and (min-width: 427px) and (max-width: 767px) {
     .carouselImgSection{
        
-        gap:17vh
+        gap:25vh;
      }
 
 
@@ -348,6 +356,7 @@ body{
 
      .cardProductos {
         width: 80vw;
+        height: auto;
      }
      .cardProductos h5{
         font-size: 30px;
@@ -362,11 +371,12 @@ body{
      .carouselImgSection{
         margin-top: 5vh;
         height: auto;
-        gap:18vh;
+        gap:27vh;
      }
 
      .carouselImgSection h2{
         margin-top: 5vh;
+        margin-left: 12vw;
      }
 
      .carouselImgDiv{
