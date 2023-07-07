@@ -237,7 +237,7 @@ body{
      .carouselImgSection{
         margin-top: 5vh;
         height: auto;
-        gap:5vh
+        gap:9vh;
      }
 
      .carouselImgSection h2{
